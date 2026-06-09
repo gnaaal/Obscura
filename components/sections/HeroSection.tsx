@@ -1,4 +1,4 @@
-<Image src="/camera-hero.png" alt="Camera" fill className="object-cover" />"use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";

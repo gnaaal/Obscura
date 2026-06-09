@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+    import Image from "next/image"
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,14 +23,16 @@ const Navigation = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2 group">
-              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center font-bold text-white group-hover:scale-110 transition-transform">
-                O
-              </div>
-              <span className="text-xl font-bold text-primary">
-                Obscura
-              </span>
-            </Link>
+           <Link href="/" className="flex items-center space-x-2 group">
+            <div className="group-hover:scale-110 transition-transform">
+                <img
+                 src="/bscura_logo_original.png"
+                 alt="Obscura Logo"
+                 width="100"
+                />
+            </div>
+
+</Link>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">
@@ -104,4 +107,3 @@ const Navigation = () => {
 };
 
 export default Navigation;
-<Image src="/bscura_logo_original.png" alt="Obscura" width={40} height={40} /><Image src="/camera-hero.png" alt="Camera" fill className="object-cover" />
